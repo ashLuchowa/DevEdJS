@@ -10,6 +10,7 @@ function smoothScroll(target, duration) {
     var timeElapse = currentTime - startTime;
     var run = ease(timeElapse, startPosition, distance, duration);
     window.scrollTo(0, run);
+    if (timeElapse < duration) requestAnimationFrame(animation);
   }
 
   function ease(t, b, c, d) {
