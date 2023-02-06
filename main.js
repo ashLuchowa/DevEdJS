@@ -1,9 +1,16 @@
 function smoothScroll(target, duration) {
-  const targetLocation = document.querySelector(target);
-  const targetPosition = targetLocation.getBoundingClientRect().top;
-  const startPosition = window.pageYOffset;
-  const distance = targetPosition - startPosition;
-  const startTime = null;
+  var targetLocation = document.querySelector(target);
+  var targetPosition = targetLocation.getBoundingClientRect().top;
+  var startPosition = window.pageYOffset;
+  var distance = targetPosition - startPosition;
+  var startTime = null;
+
+  function animation(currentTime) {
+    if (startTime === null) startTime = currentTime;
+    var timeElapse = currentTime - startTime;
+  }
+
+  requestAnimationFrame(animation);
 }
 
 smoothScroll(".section2", 1000);
