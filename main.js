@@ -1,3 +1,5 @@
+var section1 = document.querySelector(".section1");
+
 function smoothScroll(target, duration) {
   var targetLocation = document.querySelector(target);
   var targetPosition = targetLocation.getBoundingClientRect().top;
@@ -23,4 +25,6 @@ function smoothScroll(target, duration) {
   requestAnimationFrame(animation);
 }
 
-smoothScroll(".section2", 1000);
+section1.addEventListener("click", () => {
+  smoothScroll(".section2", 1000);
+});
