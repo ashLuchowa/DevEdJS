@@ -1,5 +1,48 @@
 * {
+  font-family: sans-serif;
+  line-height: 1.15;
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+}
+
+header {
+  background-image: url(./img/bg.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(58, 64, 104);
+}
+
+.intro {
+  height: 100vh;
+  margin: 0px 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-content img {
+  height: 70%;
+}
+.intro-text h2 {
+  line-height: 1.5;
+}
+
+.intro-text p {
+  width: 500px;
 }
