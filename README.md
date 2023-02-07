@@ -1,2 +1,5 @@
-# DevEdJS
-Dev Ed Javascript Practice Projects
+# 001_smoothScroll
+
++ Tuturial by [DevEd](https://www.youtube.com/@developedbyed)
++ [Follow tuturial here](https://www.youtube.com/watch?v=oUSvlrDTLi4&ab_channel=developedbyed)
++ [live preview](https://ashluchowa.github.io/DevEdJS/)
