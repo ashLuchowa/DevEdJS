@@ -5,6 +5,8 @@ function scrollAppear() {
 
   if (introPosition < screenPosition) {
     introText.classList.add("intro-appear");
+  } else {
+    introText.classList.remove("intro-appear");
   }
 }
 
