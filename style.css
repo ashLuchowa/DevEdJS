@@ -12,7 +12,7 @@ body {
 
 /* CAROUSEL */
 .carousel-container {
-  width: 60%;
+  width: 640px;
   margin: auto;
   border: 5px solid black;
   overflow: hidden;
