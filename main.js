@@ -5,16 +5,24 @@ const nextBtn = document.querySelector("#nextBtn");
 let counter = 1;
 const size = carouselImages[0].clientWidth;
 
-carouselSlide.style.transform = "translate(" + -size * counter + "px)";
+carouselSlide.style.transform = "translate(" + -(size * counter) + "px)";
 
 nextBtn.addEventListener("click", () => {
   carouselSlide.style.transition = "transform 0.4s ease-in-out";
   counter++;
-  carouselSlide.style.transform = "translate(" + -size * counter + "px)";
+  carouselSlide.style.transform = "translate(" + -(size * counter) + "px)";
 });
 
 prevBtn.addEventListener("click", () => {
   carouselSlide.style.transition = "transform 0.4s ease-in-out";
   counter--;
-  carouselSlide.style.transform = "translate(" + -size * counter + "px)";
+  carouselSlide.style.transform = "translate(" + -(size * counter) + "px)";
+});
+
+carouselSlide.addEventListener("transitionend", () => {
+  if (carouselImages[counter].id === "lastClone") {
+    carouselSlide.style.transition = "none";
+    counter = carouselImages.length - 2;
+    carouselSlide.style.transform = "translate(" + -(size * counter) + "px)";
+  }
 });
