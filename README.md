@@ -5,7 +5,7 @@
 
 - [x] [002_popupOnDisplay](https://www.youtube.com/watch?v=C_JKlr4WKKs&ab_channel=developedbyed)
 
-- [X] [003_modalJS](https://www.youtube.com/watch?v=KjQ8uvAt9kQ&ab_channel=developedbyed)
+- [x] [003_modalJS](https://www.youtube.com/watch?v=KjQ8uvAt9kQ&ab_channel=developedbyed)
 
 - [ ] [004_imageSlider](https://www.youtube.com/watch?v=KcdBOoK3Pfw&ab_channel=developedbyed)
 
