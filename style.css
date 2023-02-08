@@ -51,7 +51,8 @@ header {
   text-align: center;
 }
 
-.intro-content button {
+.intro-content button,
+.modal button {
   background-color: rgb(88, 97, 155);
   color: aliceblue;
   font-size: 18px;
@@ -76,5 +77,13 @@ header {
 }
 
 .modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: white;
+  width: 30vw;
+  height: 30vh;
+  border-radius: 8px;
+  gap: 35px;
 }
