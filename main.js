@@ -6,3 +6,15 @@ let counter = 1;
 const size = carouselImages[0].clientWidth;
 
 carouselSlide.style.transform = "translate(" + -size * counter + "px)";
+
+nextBtn.addEventListener("click", () => {
+  carouselSlide.style.transition = "transform 0.4s ease-in-out";
+  counter++;
+  carouselSlide.style.transform = "translate(" + -size * counter + "px)";
+});
+
+prevBtn.addEventListener("click", () => {
+  carouselSlide.style.transition = "transform 0.4s ease-in-out";
+  counter--;
+  carouselSlide.style.transform = "translate(" + -size * counter + "px)";
+});
