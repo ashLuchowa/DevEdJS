@@ -1,6 +1,4 @@
 # DevEdJS
-Dev Ed Javascript Practice Projects
-
 [DevEd Youtube Channel](https://www.youtube.com/@developedbyed/videos)
 
 Tutorials
